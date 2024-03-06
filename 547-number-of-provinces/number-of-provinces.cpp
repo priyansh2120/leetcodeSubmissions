@@ -16,6 +16,16 @@ private:
             }
         }
     }
+    // lets do it by dfs
+    void dfs(int node, vector<int>&vis, vector<vector<int>>& isConnected){
+        for(int i=0; i<isConnected.size(); i++){
+
+            if(isConnected[node][i]==1 and vis[i]==0){
+                vis[i]=1;
+                dfs(i, vis, isConnected);
+            }
+        }
+    }
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
         // ek loop chala j
@@ -24,7 +34,8 @@ public:
         int cnt= 0;
         for(int i=0; i<n; i++){
             if(vis[i]==0){
-                bfs(i, vis, isConnected);
+                vis[i]=1;
+                dfs(i, vis, isConnected);
                 cnt++;
             }
         }
