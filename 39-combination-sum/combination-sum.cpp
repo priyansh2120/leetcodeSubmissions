@@ -1,6 +1,6 @@
 class Solution {
 private:
-    void helper(int index, int sum, vector<int>&curr, set<vector<int>>&ans, 
+    void helper(int index, int sum, vector<int>&curr, vector<vector<int>>&ans, 
         vector<int>& candidates, int target){
             
         // each element can be taken any amount of time
@@ -10,22 +10,21 @@ private:
             return;
         }
         if(sum==target){
-            ans.insert(curr);
+            ans.push_back(curr);
             return;
         }
         curr.push_back(candidates[index]);
         helper(index, sum+candidates[index], curr, ans, candidates, target);
-        helper(index+1, sum+candidates[index], curr, ans, candidates, target);
+        // helper(index+1, sum+candidates[index], curr, ans, candidates, target);
         curr.pop_back();
         helper(index+1, sum, curr, ans, candidates, target);
     }
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        set<vector<int>>ans;
+        vector<vector<int>>ans;
         vector<int>curr;
         sort(candidates.begin(), candidates.end());
         helper(0, 0, curr, ans, candidates, target);
-        vector<vector<int>>anss(ans.begin(), ans.end());
-        return anss;
+        return ans;
     }
 };
