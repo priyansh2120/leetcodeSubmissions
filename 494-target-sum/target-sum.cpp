@@ -18,6 +18,7 @@ private:
 public:
     int findTargetSumWays(vector<int>& nums, int target) {
         // can give the index to either + or -
+        target= abs(target);
         return helper(nums.size()-1, 0, target, nums);
     }
 };
