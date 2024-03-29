@@ -13,15 +13,13 @@ private:
         // case 1 match
         int t1=0;
         int t2=0;
-        int t3 =0;
-        if(s[index1]==t[index2]){
+        // int t3 =0;
+        if(s[index1]==t[index2])
             t1 = helper(index1-1, index2-1, s, t, dp);
-            t2 = helper(index1-1, index2, s, t, dp);
-        }
-        else{
-            t3 = helper(index1-1, index2, s, t, dp);
-        }
-        return dp[index1][index2]=t1+t2+t3;
+            
+        t2 = helper(index1-1, index2, s, t, dp);
+        
+        return dp[index1][index2]=t1+t2;
     }
 public:
     int numDistinct(string s, string t) {
