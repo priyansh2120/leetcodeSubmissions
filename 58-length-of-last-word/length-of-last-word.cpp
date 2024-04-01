@@ -5,12 +5,10 @@ public:
         while(s[i]==' '){
             i--;
         }
-        // cout<<i<<endl;
         int cnt =0;
         while(i>=0 and  s[i]!=' ' ){
             i--;
             cnt++;
-            // cout<<i<<endl;
         }
         return cnt;
     }
