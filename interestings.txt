@@ -1,0 +1,14 @@
+https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/description/     -- Rolling hash
+
+https://leetcode.com/problems/subarrays-with-k-different-integers/description/    - sliding window hard
+
+https://leetcode.com/problems/insert-interval/description/
+
+
+https://leetcode.com/problems/word-search-ii/description/
+-- Trie Implementation 
+--will do on 03/04
+
+
+https://leetcode.com/problems/stamping-the-grid/description/
+--prefix 2d will do later hard problem	
