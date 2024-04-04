@@ -4,11 +4,11 @@ This repository contains solutions to various LeetCode problems along with some 
 
 ## LeetCode Profile
 
-[Your LeetCode Profile](https://leetcode.com/priyansh_minku/)
+[LeetCode Profile](https://leetcode.com/priyansh_minku/)
 
 ## GeeksforGeeks Profile
 
-[Your GeeksforGeeks Profile](https://auth.geeksforgeeks.org/user/priyanshkumar50)
+[GeeksforGeeks Profile](https://auth.geeksforgeeks.org/user/priyanshkumar50)
 
 ## LeetCode Submissions
 
