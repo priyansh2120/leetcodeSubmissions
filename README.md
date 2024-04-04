@@ -21,7 +21,7 @@ This repository contains solutions to various LeetCode problems along with some 
  
 - Leetcode Solutions
   - Various solutions to problems from Leetcode
-  - Last updated 7 months ago
+  - Updated Daily
 
 
 - [Interesting Problems Solved](interestings.txt)
