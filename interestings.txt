@@ -12,3 +12,6 @@ https://leetcode.com/problems/word-search-ii/description/
 
 https://leetcode.com/problems/stamping-the-grid/description/
 --prefix 2d will do later hard problem	
+
+https://leetcode.com/contest/weekly-contest-392/problems/minimum-operations-to-make-median-of-array-equal-to-k/
+--apply dsu and bit manipulation
