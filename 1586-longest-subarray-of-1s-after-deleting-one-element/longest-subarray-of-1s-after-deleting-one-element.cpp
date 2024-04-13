@@ -4,26 +4,20 @@ public:
         int i=0;
         int j =0;
         int zcnt =0;
-        int ans = 1;
-        
+        int ans = 0;
         while(j<nums.size()){
             if(nums[j]==0){
-                zcnt++;
-                j++;
+                zcnt++; 
             }
-            else{
-               j++; 
-            }
-            
-            if(zcnt>1){
-                while(nums[i]!=0){
-                    i++;
+            while(zcnt>1){
+                if(nums[i]==0) {
+                    zcnt--;
                 }
                 i++;
-                zcnt--;
             }
-            ans=max(ans, j-i+1);
+            ans=max(ans,j-i+1);
+            j++;
         }
-        return ans-2;
+        return ans-1;
     }
 };
