@@ -8,3 +8,8 @@
  https://leetcode.com/submissions/detail/1231150818/
 
 Note: for count based question thing in direction how we can reach the solution from atmost approach
+
+
+https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/description/
+
+https://leetcode.com/problems/frequency-of-the-most-frequent-element/
