@@ -1,0 +1,10 @@
+1. template based questions
+ a. Length based questions
+ https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/
+ https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+ https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/
+ b. count based questions
+ https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/
+ https://leetcode.com/submissions/detail/1231150818/
+
+Note: for count based question thing in direction how we can reach the solution from atmost approach

@@ -1,0 +1,16 @@
+initialization of window
+keep ans variable to store the answer
+int ans=0;
+int n = nums.size();
+        while(j<n){
+           operation on new index
+
+            if window is valid{
+                shrink the window
+            }
+
+            update ans
+            expand the window
+        }
+        return ans;
+        
