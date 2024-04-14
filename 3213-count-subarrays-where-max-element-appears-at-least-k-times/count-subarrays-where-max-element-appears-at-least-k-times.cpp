@@ -6,12 +6,17 @@ public:
         int i=0; 
         int j=0; 
         int maxi= *max_element(nums.begin(), nums.end());
-        unordered_map<long long, long long>mpp;
-        while(j<n){
-            mpp[nums[j]]++;
+        int cnt=0;
 
-            while(mpp[maxi]>=k){
-                mpp[nums[i]]--;
+        while(j<n){
+            if(nums[j]==maxi){
+                cnt++;
+            }
+
+            while(cnt>=k){
+                if(nums[i]==maxi){
+                    cnt--;
+                }
                 i++;
             }
             ans-=(j-i+1);
