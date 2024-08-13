@@ -22,7 +22,7 @@ public:
         ll low = 1;
         ll ans = 0;
         const int MOD = 1e9 + 7;
-        for(int i=0; i<100; i++){
+        for(int i=0; i<60; i++){
             ll mid = (low+high)/2;
             if(check(n, a, b, mid)){
                 ans= mid;
