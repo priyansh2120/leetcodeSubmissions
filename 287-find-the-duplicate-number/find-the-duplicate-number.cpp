@@ -1,25 +1,35 @@
 class Solution {
+private:
+    bool check(int mid, vector<int>& nums){
+        int cnt =0;
+        for(int i=0; i<nums.size(); i++){
+            if(nums[i]<=mid){
+                cnt++;
+            }
+        }
+        cout<<mid<<' '<<cnt<<endl;
+        return cnt>mid;
+    }
 public:
     int findDuplicate(vector<int>& nums) {
-        int slow = 0; 
-        int fast = 0;
-        while(true){
-            slow = nums[slow];
-            fast = nums[nums[fast]];
+        // bs approach
+        int n = nums.size();
+        int low =1;
+        int high = n-1;
 
-            if(slow == fast ){
-                break;
-            }
-        }
-        int slow2 =0;
-        while(true){
-            slow2= nums[slow2];
-            slow = nums[slow];
-            if(slow==slow2){
-                return slow;
-            }
-        }
-        return 0;
+        int ans = 0;
+        for(int i=0; i<20; i++){
 
+            int mid = (low+high)/2;
+            
+            if(check(mid, nums)){
+                ans= mid;
+                high=mid-1;
+            }
+            else{
+                low=mid+1;
+            }   
+        }
+        return ans;
     }
 };
