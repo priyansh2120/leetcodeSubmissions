@@ -10,11 +10,11 @@ public:
             int new_upper = upper - nums[i];
             
             int left = lower_bound(nums.begin() + i + 1, nums.end(), new_lower) - nums.begin();
-            int right = upper_bound(nums.begin() + i + 1, nums.end(), new_upper) - nums.begin() - 1;
+            int right = upper_bound(nums.begin() + i + 1, nums.end(), new_upper) - nums.begin();
             
 
             if (left <= right) {
-                ans += right - left + 1;
+                ans += right - left;
             }
         }
         
