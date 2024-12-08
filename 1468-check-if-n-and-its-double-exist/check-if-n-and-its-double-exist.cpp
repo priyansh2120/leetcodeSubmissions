@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool checkIfExist(vector<int>& arr) {
-        map<int, int>mpp;
+        unordered_map<int, int>mpp;
         for(auto it:arr){
             mpp[it]++;
         }
